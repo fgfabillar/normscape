@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(255, 240, 245);
+}
+
+/* Laptop Screen Size */
+
+/* Header */
+#header-text {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.logo-header a {
+  text-decoration: none;
+}
+
+/* Normscape Text Logo */
+.text-logo {
+  color: rgb(225, 120, 197);
+  font-size: calc(2vw + 2vh);
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: normal;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+/* Navigation Bar */
+#navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: space-evenly;
+}
+
+#navigation-bar ul li:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+#navigation-bar ul li#overview {
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+#navigation-bar ul li:last-child {
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+#navigation-bar a {
+  color: rgb(225, 120, 197);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-family: 'Lilita One';
+  font-size: calc(1.5vw + 1.5vh);
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+#navigation-bar a:hover {
+  color: rgb(255, 142, 143);
+}
+
+/* Dropdown Menu */
+#navigation-bar ul .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#navigation-bar ul li:hover .dropdown-menu {
+  display: block;
+}
+  
+.dropdown-menu a {
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.dropdown-menu .discussion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-menu .summary {
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+} 
+
+/* Container */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+/* Contact */
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  height: 100%;
+  background: url("https://www.suitable.co/hs-fs/hubfs/Student%20Development%20Theory%20Cheat%20Sheet%20Featured%20Image.png?width=1600&height=934&name=Student%20Development%20Theory%20Cheat%20Sheet%20Featured%20Image.png") no-repeat center;
+  background-size: cover;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+h1{
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: 'Coiny';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(238, 159, 217);
+  text-shadow: 2px -1px 0  rgb(225, 120, 197);
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px;
+  border-radius: 2px;
+  background-color: rgb(225, 120, 197);
+  margin-bottom: 10px;
+}
+
+/* Form */
+.field {
+  width: 100%;
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid rgb(225, 120, 197);
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 22px;
+  transition: .3s;
+  font-family: 'Poppins';
+}
+
+.contact-box textarea{
+  padding-top: 15px;
+  padding-bottom: 25px;
+  height: 100px;
+}
+
+::placeholder{
+  color: grey;
+}
+
+.field:hover {
+  background-color: rgb(249, 226, 244);
+}
+
+.field:focus {
+  background-color: rgb(249, 226, 244);
+  border: 2px solid rgb(225, 120, 197);
+}
+
+.area {
+  min-height: 150px;
+}
+
+/* Submit button */
+#submitBtn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  background-color: rgb(225, 120, 197);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .3s;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Lilita One';
+}
+
+#submitBtn:hover {
+  background-color: rgb(255, 142, 143);
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: rgb(225, 120, 197);
+  padding: 9px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Inter';
+  margin-top: 100px;
+}
+
+#footer span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#footer ul li:last-child {
+  margin-right: 0px;
+}
+
+#footer ul li a {
+  width: 100%;
+  height: 35px;
+  line-height: 30px;
+  color: rgb(225, 120, 197);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+#footer ul li a i {
+  font-size: 17px;
+}
+
+/* Mobile Sreen Size */
+
+@media (max-width: 768px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    height: 200px;
+  }
+}

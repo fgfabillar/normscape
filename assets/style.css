@@ -1,0 +1,370 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(255, 240, 245);
+}
+
+/* Laptop Screen Size */
+
+/* Header */
+#header-text {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.logo-header a {
+  text-decoration: none;
+}
+
+/* Normscape Text Logo */
+.text-logo {
+  color: rgb(225, 120, 197);
+  font-size: calc(2vw + 2vh);
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: normal;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+/* Navigation Bar */
+#navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: space-evenly;
+}
+
+#navigation-bar ul li:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+#navigation-bar ul li#overview {
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+#navigation-bar ul li:last-child {
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+#navigation-bar a {
+  color: rgb(225, 120, 197);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-family: 'Lilita One';
+  font-size: calc(1.5vw + 1.5vh);
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+#navigation-bar a:hover {
+  color: rgb(255, 142, 143);
+}
+
+/* Dropdown Menu */
+#navigation-bar ul .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#navigation-bar ul li:hover .dropdown-menu {
+  display: block;
+}
+  
+.dropdown-menu a {
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.dropdown-menu .discussion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-menu .summary {
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+
+/* Hero Image and Text */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  margin: 0;
+  overflow: hidden;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: calc(16vw + 16vh);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(225, 120, 197);
+  font-size: 12vw;
+  font-family: 'Titan One';
+  font-weight: normal;
+  text-shadow: 6px -6px 0 white;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Content */
+h1 {
+  position: relative;
+  font-family: 'Coiny';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 85px;
+  color:  rgb(238, 159, 217);
+  text-shadow: 5px -3px 0 rgb(225, 120, 197);
+  margin-top: 100px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  position: relative;
+  font-family: 'Coiny';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 85px;
+  color:  rgb(238, 159, 217);
+  text-shadow: 5px -3px 0 rgb(225, 120, 197);
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(225, 120, 197);
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 80px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: 'Poppins';
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+/* Explore More Button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.explore-button {
+  padding: 16px 25px;
+  font-family: 'Lilita One';
+  font-size: 26px;
+  color: white;
+  background-color: rgb(225, 120, 197);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.explore-button:hover {
+  background-color: rgb(255, 142, 143);
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: rgb(225, 120, 197);
+  padding: 9px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Inter';
+  margin-top: 100px;
+}
+
+#footer span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#footer ul li:last-child {
+  margin-right: 0px;
+}
+
+#footer ul li a {
+  width: 100%;
+  height: 35px;
+  line-height: 30px;
+  color: rgb(225, 120, 197);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+#footer ul li a i {
+  font-size: 17px;
+}
+
+
+/* Tablet Screen Size */
+
+@media (max-width: 991px) {
+
+  #navigation-bar ul li:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Hero Image and Text */
+  .hero-container {
+    height: 70%;
+  }
+
+  .text-overlay {
+    text-shadow: 5px -5px 0 white;
+  }
+
+  /* Content */
+  h1 {
+    font-size: 75px;
+    text-shadow: 4px -2px 0 rgb(225, 120, 197);
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-size: 75px;
+    text-shadow: 4px -2px 0 rgb(225, 120, 197);
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 45px;
+  }
+}
+
+
+/* Mobile Sreen Size */
+
+@media (max-width: 768px) {
+
+  #navigation-bar ul li:first-child {
+    padding-right: 5px;
+  }
+
+  /* Hero Image and Text */
+  .hero-container {
+    height: 60%;
+  }
+
+  .text-overlay {
+    text-shadow: 4px -4px 0 white;
+  }
+
+  /* Content */
+  h1 {
+    font-size: 65px;
+    text-shadow: 3px -2px 0 rgb(225, 120, 197);
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 65px;
+    text-shadow: 3px -2px 0 rgb(225, 120, 197);
+  }
+
+  h3 {
+    font-size: 23px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 60px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 40px;
+  }
+}
